@@ -184,7 +184,7 @@
   var lbList = [], lbIdx = 0;
 
   function showLB() {
-    lbImg.src = lbList[lbIdx].src;
+    lbImg.src = lbList[lbIdx].dataset.full || lbList[lbIdx].src;
     lbImg.alt = lbList[lbIdx].alt;
     lbCnt.textContent = (lbIdx + 1) + ' / ' + lbList.length;
   }
